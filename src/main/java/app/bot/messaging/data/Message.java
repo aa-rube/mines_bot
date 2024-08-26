@@ -16,6 +16,7 @@ public class Message {
     private final Keyboard keyboard;
     private final String[] waitingMessagesList;
     private final Long admin;
+    private final String path;
 
     public Message(@Lazy MessagingService msgService,
                    Keyboard keyboard, BotConfig botConfig) {
@@ -26,6 +27,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
+        this.path = "/root/mines_bot/";
 
     }
 
@@ -37,7 +39,7 @@ public class Message {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.REGISTRATION_FOR_STARTING.getText(),
                 keyboard.registration(),
-                new java.io.File("data/reg.jpg")));
+                new java.io.File(path + "data/reg.jpg")));
     }
 
     public void startMessage(Update update, Long chatId, boolean hsSubscription) {
@@ -70,7 +72,7 @@ public class Message {
     public void manualMessage(Long chatId, String data) {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.MANUAL_CAPTION.getText(), keyboard.manualKeyboard(data),
-                new java.io.File("data/manual.jpg")));
+                new java.io.File(path + "data/manual.jpg")));
     }
 
     public void signalMessage(Long chatId) {
