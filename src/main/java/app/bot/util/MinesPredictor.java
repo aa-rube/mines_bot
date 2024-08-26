@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class MinesPredictor {
     private final static Random random = new Random();
+    private final static String path = "/root/mines_bot/";
 
     public static String[] predict(int mine) {
         int pic = 0;
@@ -28,7 +29,7 @@ public class MinesPredictor {
 
         return new String[]{
                 String.format(MessageText.GAME_INFO.getText(), gameNumber, chanceWhole, chanceFraction),
-                String.format("data/%s[%s].jpg", mine, predictedPic)
+                String.format("%sdata/%s[%s].jpg", path, mine, predictedPic)
         };
     }
 }
