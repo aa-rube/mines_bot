@@ -13,12 +13,10 @@ public class CheckSubscribeToChannel {
 
     public CheckSubscribeToChannel(@Lazy MessagingService msgService) {
         this.msgService = msgService;
-        this.partners = new String[]{"-1002126972926"} ;
+        this.partners = new String[]{"-1002126972926"};
     }
 
     public boolean checkChannelSubscription(Long chatId) {
-        return true;
-    }
         int partnerCount = partners.length;
 
         for (String partner : partners) {
