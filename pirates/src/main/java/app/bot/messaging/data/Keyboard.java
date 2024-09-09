@@ -11,12 +11,10 @@ public class Keyboard {
     public InlineKeyboardMarkup subscribe() {
         return TelegramData.createInlineKeyboardColumnAuto(
                 new String[]{
-                        ButtonText.CRYPTOWORK.getText(),
                         ButtonText.MILKYWAY.getText(),
                         ButtonText.CHECK.getText()
                 },
                 new String[]{
-                        "https://t.me/criptowork89",
                         "https://t.me/mi1lkyway89",
                         "proverka"}
         );

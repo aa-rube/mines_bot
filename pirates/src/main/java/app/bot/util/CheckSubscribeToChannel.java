@@ -13,28 +13,28 @@ public class CheckSubscribeToChannel {
 
     public CheckSubscribeToChannel(@Lazy MessagingService msgService) {
         this.msgService = msgService;
-        this.partners = new String[]{"-1002012020162", "-1002126972926"} ;
+        this.partners = new String[]{"-1002126972926"} ;
     }
 
     public boolean checkChannelSubscription(Long chatId) {
         return true;
     }
-//        int partnerCount = partners.length;
-//
-//        for (String partner : partners) {
-//            String status;
-//
-//            try {
-//                status = msgService.getChatMember(new GetChatMember(partner, chatId)).getStatus();
-//            } catch (Exception e) {
-//                continue;
-//            }
-//
-//            if (status != null && !status.equals("null")
-//                    && (status.equals("member") || status.equals("creator") || status.equals("administrator"))) {
-//                partnerCount--;
-//            }
-//        }
-//        return partnerCount == 0;
-//    }
+        int partnerCount = partners.length;
+
+        for (String partner : partners) {
+            String status;
+
+            try {
+                status = msgService.getChatMember(new GetChatMember(partner, chatId)).getStatus();
+            } catch (Exception e) {
+                continue;
+            }
+
+            if (status != null && !status.equals("null")
+                    && (status.equals("member") || status.equals("creator") || status.equals("administrator"))) {
+                partnerCount--;
+            }
+        }
+        return partnerCount == 0;
+    }
 }

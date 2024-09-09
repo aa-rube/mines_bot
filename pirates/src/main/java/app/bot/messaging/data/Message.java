@@ -29,7 +29,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
-        this.path = "/root/pirates/data/";
+        this.path = "/root/mines_bot/pirates/data/";
     }
 
     public void delete(Long chatId, int msgId) {
