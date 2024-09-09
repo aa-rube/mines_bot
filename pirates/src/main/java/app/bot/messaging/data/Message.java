@@ -29,12 +29,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
-//        this.path = //"/root/pirates" + File.separator +
-////                File.separator +
-//                        "data" + File.separator;
-
-
-        this.path = "C:\\Users\\Alex\\Desktop\\pirates\\data\\";
+        this.path = "/root/pirates/data/";
     }
 
     public void delete(Long chatId, int msgId) {
@@ -45,7 +40,7 @@ public class Message {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.REGISTRATION_FOR_STARTING.getText(),
                 keyboard.registration(),
-                new java.io.File("C:\\Users\\Alex\\Desktop\\pirates\\data\\reg.jpg")));
+                new java.io.File("reg.jpg")));
     }
 
     public void startMessage(Update update, Long chatId, boolean hsSubscription) {
@@ -79,7 +74,7 @@ public class Message {
     public void manualMessage(Long chatId, String data) {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.MANUAL_CAPTION.getText(), keyboard.manualKeyboard(data),
-                new java.io.File("C:\\Users\\Alex\\Desktop\\pirates\\data\\manual.jpg")));
+                new java.io.File("manual.jpg")));
     }
 
     public void prediction(Long chatId, String userName, String data) {
@@ -89,7 +84,7 @@ public class Message {
         int i = 0;
         for (String string : waitingMessagesList) {
             if (i == 0) {
-               i = msgService.getMessageIdFromMessage(TelegramData.getSendMessage(chatId, string, null));
+                i = msgService.getMessageIdFromMessage(TelegramData.getSendMessage(chatId, string, null));
             }
             msgService.processMessage(TelegramData.getEditMessage(chatId, string, null, i));
             SafetySleep.sleep();
@@ -107,11 +102,11 @@ public class Message {
 
         String correctForm = mines > 4 ? "мин" : (mines == 1 ? "мину" : "мины");
         msgService.processMessage(TelegramData.getSendMessage(admin,
-                String.format(MessageText.USER_RECEIVED_SIGNAL.getText(),userName, mines, correctForm), null));
+                String.format(MessageText.USER_RECEIVED_SIGNAL.getText(), userName, mines, correctForm), null));
     }
 
     public boolean scheduleMessage(Long chatId) {
-       return msgService.getMessageIdFromMessage(TelegramData.getSendMessage(chatId,
+        return msgService.getMessageIdFromMessage(TelegramData.getSendMessage(chatId,
                 MessageText.USER_SCHEDULE_NOTIFICATION.getText(), null)) > 0;
     }
 
