@@ -10,7 +10,6 @@ public class StateKeeper {
 
     public final static HashMap<Long, State> stateMap = new HashMap<>();
     public final static HashMap<Long, Message> spamMessages = new HashMap<>();
-
     public static void removeState(Long chatId) {
         stateMap.remove(chatId);
     }

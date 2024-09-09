@@ -28,7 +28,6 @@ public class Message {
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
         this.path = "/root/mines_bot/";
-
     }
 
     public void delete(Long chatId, int msgId) {
@@ -43,6 +42,7 @@ public class Message {
     }
 
     public void startMessage(Update update, Long chatId, boolean hsSubscription) {
+
         if (hsSubscription) {
 
             msgService.processMessage(TelegramData.getSendMessage(chatId,
