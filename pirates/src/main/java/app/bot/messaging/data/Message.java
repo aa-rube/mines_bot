@@ -40,7 +40,7 @@ public class Message {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.REGISTRATION_FOR_STARTING.getText(),
                 keyboard.registration(),
-                new java.io.File("reg.jpg")));
+                new java.io.File(path + "reg.jpg")));
     }
 
     public void startMessage(Update update, Long chatId, boolean hsSubscription) {
@@ -74,7 +74,7 @@ public class Message {
     public void manualMessage(Long chatId, String data) {
         msgService.processMessage(TelegramData.getSendPhoto(chatId,
                 MessageText.MANUAL_CAPTION.getText(), keyboard.manualKeyboard(data),
-                new java.io.File("manual.jpg")));
+                new java.io.File(path + "manual.jpg")));
     }
 
     public void prediction(Long chatId, String userName, String data) {
