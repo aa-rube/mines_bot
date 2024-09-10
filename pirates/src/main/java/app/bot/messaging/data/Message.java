@@ -21,7 +21,8 @@ public class Message {
     private final String path;
 
     public Message(@Lazy MessagingService msgService,
-                   Keyboard keyboard, BotConfig botConfig) {
+                   Keyboard keyboard,
+                   BotConfig botConfig) {
         this.msgService = msgService;
         this.keyboard = keyboard;
         this.admin = botConfig.getAdminChatId();
@@ -29,7 +30,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
-        this.path = "/root/mines_bot/pirates/data/";
+        this.path = botConfig.getPath();
     }
 
     public void delete(Long chatId, int msgId) {

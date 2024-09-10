@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb6fea3-98da-4b22-ae60-a8d5a40af0ea" name="Changes" comment="" />
+    <list default="true" id="cdb6fea3-98da-4b22-ae60-a8d5a40af0ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/bot/config/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/bot/config/BotConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/config/BotConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/config/BotConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Keyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Keyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/util/CheckSubscribeToChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/util/CheckSubscribeToChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lqx8zmGf2lwjJzmifO0hpnUvaT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,12 +33,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/PROGRAMMING/WORK/2019/miner"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Application" />
+      <module name="MINER_BOT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
