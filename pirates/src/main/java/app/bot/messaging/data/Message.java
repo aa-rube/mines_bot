@@ -101,9 +101,8 @@ public class Message {
                 )
         );
 
-        String correctForm = mines > 4 ? "мин" : (mines == 1 ? "мину" : "мины");
         msgService.processMessage(TelegramData.getSendMessage(admin,
-                String.format(MessageText.USER_RECEIVED_SIGNAL.getText(), userName, mines, correctForm), null));
+                String.format(MessageText.USER_RECEIVED_SIGNAL.getText(), userName), null));
     }
 
     public boolean scheduleMessage(Long chatId) {

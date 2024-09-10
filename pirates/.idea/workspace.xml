@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb6fea3-98da-4b22-ae60-a8d5a40af0ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/bot/config/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/bot/config/BotConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/config/BotConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/config/BotConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Keyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Keyboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/messaging/data/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/bot/util/CheckSubscribeToChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/bot/util/CheckSubscribeToChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/bot/messaging/data/MessageText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +25,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/PROGRAMMING/WORK/2019/miner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PROGRAMMING/WORK/2019/miner/royal_mines&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Application" />
