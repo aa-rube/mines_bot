@@ -20,6 +20,6 @@ public class BotConfig {
     @Value("${admin.chat.id}")
     private long adminChatId;
 
-    private String path = "/root/mines_bot/royal_mines/data/";
+    private final String path = "/root/mines_bot/royal_mines/data/";
 
 }

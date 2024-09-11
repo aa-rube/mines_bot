@@ -30,7 +30,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
-        this.path = "data\\";//botConfig.getPath();
+        this.path = botConfig.getPath();
     }
 
     public void delete(Long chatId, int msgId) {
