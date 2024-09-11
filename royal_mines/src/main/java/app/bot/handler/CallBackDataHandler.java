@@ -79,6 +79,12 @@ public class CallBackDataHandler {
             return;
         }
 
+        if (data.contains("signal")) {
+            message.delete(chatId, msgId);
+            message.signalMessage(chatId);
+            return;
+        }
+
         if (data.contains("/admin_")) {
 
             if (data.contains("create_spam")) {

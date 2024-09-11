@@ -12,7 +12,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "miner_users")
+@Document(collection = "miner_royal_users")
 public class PirateUser {
     @Id
     private Long chatId;

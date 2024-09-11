@@ -30,7 +30,7 @@ public class Message {
                 MessageText.GAME_ANALYSIS.getText(),
                 MessageText.GAME_RETRIEVAL.getText(),
                 MessageText.GAME_STUDY.getText()};
-        this.path = botConfig.getPath();
+        this.path = "data\\";//botConfig.getPath();
     }
 
     public void delete(Long chatId, int msgId) {
@@ -42,6 +42,11 @@ public class Message {
                 MessageText.REGISTRATION_FOR_STARTING.getText(),
                 keyboard.registration(),
                 new java.io.File(path + "reg.jpg")));
+    }
+
+    public void signalMessage(Long chatId) {
+        msgService.processMessage(TelegramData.getSendMessage(chatId,
+                MessageText.SIGNAL_CONFIRMATION.getText(), keyboard.mines()));
     }
 
     public void startMessage(Update update, Long chatId, boolean hsSubscription) {

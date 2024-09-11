@@ -11,10 +11,12 @@ public class Keyboard {
     public InlineKeyboardMarkup subscribe() {
         return TelegramData.createInlineKeyboardColumnAuto(
                 new String[]{
+                        ButtonText.CRYPTOWORK.getText(),
                         ButtonText.MILKYWAY.getText(),
                         ButtonText.CHECK.getText()
                 },
                 new String[]{
+                        "https://t.me/criptowork89",
                         "https://t.me/mi1lkyway89",
                         "proverka"}
         );
@@ -69,7 +71,28 @@ public class Keyboard {
                 new String[]{ButtonText.MANUAL.getText(), ButtonText.SIGNAL.getText()},
                 new String[]{
                         "manual1",
-                        "1_mina"
+                        "signal"
+                }
+        );
+    }
+
+    public InlineKeyboardMarkup mines() {
+        return TelegramData.createInlineKeyboardColumn(
+
+                new String[]{
+                        ButtonText.TWO_FILED.getText(),
+                        ButtonText.THREE_FILED.getText(),
+                        ButtonText.FOUR_FILED.getText(),
+                        ButtonText.FIVE_FILED.getText(),
+                        ButtonText.SIX_FILED.getText()
+                },
+
+                new String[]{
+                        "1_mina",
+                        "2_mina",
+                        "3_mina",
+                        "4_mina",
+                        "5_mina"
                 }
         );
     }
@@ -77,10 +100,12 @@ public class Keyboard {
     public InlineKeyboardMarkup minesCount(int minesCount) {
         return TelegramData.createInlineKeyboardColumn(
                 new String[]{
-                        ButtonText.GET_SIGNAL.getText()
+                        ButtonText.GET_SIGNAL.getText(),
+                        ButtonText.CHOOSE_MINES.getText()
                 },
                 new String[]{
                         minesCount + "_mina",
+                        "signal"
                 }
         );
     }
